@@ -1,0 +1,41 @@
+#toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#titulo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#menu {
+  display: flex;
+  gap: 20px;
+}
+
+.opciones {
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.opciones:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.logout {
+  margin-left: 20px;
+  color: #ffdddd;
+  font-weight: bold;
+}
+
+.logout:hover {
+  color: white;
+  text-decoration: underline;
+}

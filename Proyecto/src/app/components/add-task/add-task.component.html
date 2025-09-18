@@ -1,0 +1,35 @@
+<h2>Crear Nueva Tarea</h2>
+
+<div class="task-container">
+  <form #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
+    <div class="form-group">
+      <label for="titulo">Título:</label>
+      <input type="text" name="titulo" [(ngModel)]="task.titulo" required>
+    </div>
+
+    <div class="form-group">
+      <label for="prioridad">Prioridad:</label>
+      <select class="control" [(ngModel)]="task.prioridad" name="prioridad" required>
+        <option value="ALTA"> ALTA </option>
+        <option value="MEDIA"> MEDIA </option>
+        <option value="BAJA"> BAJA </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <input type="text" name="descripcion" [(ngModel)]="task.descripcion" required>
+    </div>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Grabar Tarea</button>
+    </mat-card-actions>
+  </form>
+</div>
+
+<hr />
+
+<!-- Puedes incrustar los otros componentes directamente 
+<app-task-search></app-task-search>
+<app-task-list></app-task-list>
+-->

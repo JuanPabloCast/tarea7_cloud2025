@@ -1,0 +1,50 @@
+.titulo-lista {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tarea-card {
+  padding: 15px;
+  margin: 10px auto;
+  width: 90%;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.tarea-card:hover {
+  transform: scale(1.02);
+}
+
+.prioridad-alta {
+  background-color: #e86d6d;
+  border-left: 5px solid #dc3545;
+}
+
+.prioridad-media {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+}
+
+.prioridad-baja {
+  background-color: #6de8c6;
+  border-left: 5px solid #28a745;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+small {
+  font-size: 12px;
+  color: #555;
+}

@@ -1,0 +1,10 @@
+<h2 class="titulo-lista">Tareas Actuales</h2>
+
+<div *ngFor="let task of tasks"
+     class="tarea-card"
+     [ngClass]="getPriorityClass(task.prioridad)"
+     (click)="completarTarea(task)">
+  <h3>{{ task.titulo }}</h3>
+  <p>{{ task.descripcion }}</p>
+  <small>Creada hace {{ tiempoDesdeCreacion(task.fecha_creacion) }}</small>
+</div>

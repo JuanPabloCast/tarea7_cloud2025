@@ -1,0 +1,28 @@
+<h2 class="titulo-busqueda">Buscar Tareas</h2>
+
+<div class="filtros">
+  <input type="text" placeholder="Buscar por título o descripción..." [(ngModel)]="busqueda" (input)="filtrarTareas()">
+
+  <button (click)="alternarOrden()">
+    Orden: {{ ordenAscendente ? 'A - Z' : 'Z - A' }}
+  </button>
+
+  <select [(ngModel)]="prioridadSeleccionada" (change)="filtrarTareas()">
+    <option value="TODAS">Todas las prioridades</option>
+    <option value="ALTA">Alta</option>
+    <option value="MEDIA">Media</option>
+    <option value="BAJA">Baja</option>
+  </select>
+</div>
+
+<div *ngIf="tareasFiltradas.length === 0">
+  <p>No hay tareas que coincidan con los filtros.</p>
+</div>
+
+<div *ngFor="let task of tareasFiltradas"
+     class="tarea-card"
+     [ngClass]="getPriorityClass(task.prioridad)">
+  <h3>{{ task.titulo }}</h3>
+  <p>{{ task.descripcion }}</p>
+  <small>Creada hace {{ tiempoDesdeCreacion(task.fecha_creacion) }}</small>
+</div>

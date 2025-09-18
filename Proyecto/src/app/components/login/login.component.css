@@ -1,0 +1,84 @@
+.login-container {
+  background-color: #d0e7f9;
+  padding: 80px;
+  border-radius: 20px;
+  width: 350px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+  background-color: #d0e7f9;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: not-allowed; /* botón deshabilitado */
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+button[type="submit"]:enabled {
+  background-color: #4CAF50;
+  cursor: pointer;
+  opacity: 1;
+}
+
+p {
+  margin-top: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+mat-card{
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+mat-form-field{
+  display: block;
+}
+.login-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
